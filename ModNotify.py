@@ -27,7 +27,7 @@ def getGroupDevs():
                     webhook = DiscordWebhook(
                         url='WEBHOOKHERE')
                     embed = DiscordEmbed(
-                        title='Grand Piece Online', description=f'Developer Status has been changed!')
+                        title='Status Changed!', description=f'Member Status has been changed!')
                     embed.add_embed_field(
                         name=f"{DevUsername}", value=f"Old Status: {data[DevUsername]} - New Status: {DevLastLocation}")
                     webhook.add_embed(embed)
